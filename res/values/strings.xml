@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dynamic Layouts - danielme.com</string>
+    <string name="hi">Hi there!!</string>  
+    <string name="left">Add left</string>
+	<string name="right">Add right</string>
+
+</resources>

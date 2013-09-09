@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Layouts dinámicos - danielme.com</string>
+    <string name="hi">Hi there!!</string>    
+    <string name="left">Añadir izquierda</string>
+	<string name="right">Añadir derecha</string>
+
+</resources>
