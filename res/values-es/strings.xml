@@ -5,5 +5,5 @@
     <string name="hi">Hi there!!</string>    
     <string name="left">Añadir izquierda</string>
 	<string name="right">Añadir derecha</string>
-
+	<string name="reset">Reiniciar</string>
 </resources>

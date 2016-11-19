@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background" >
+    android:background="@color/background" 
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -10,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/buttonsLayout"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"        
         android:layout_alignParentTop="true"
         android:fillViewport="true"
         android:scrollbarStyle="outsideInset" >
@@ -28,10 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:paddingBottom="3dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:weightSum="2" >
+         android:layout_alignParentStart="true"
+        android:paddingBottom="3dp">
 
         <Button
             android:id="@+id/buttonLeft"
@@ -40,12 +41,19 @@
             android:layout_weight="1"
             android:text="@string/left" 
             android:onClick="addLeft"/>
+        
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset" 
+            android:onClick="reset"/>
 
         <Button
             android:id="@+id/buttonRight"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="22dp"
             android:layout_weight="1"
             android:text="@string/right" 
             android:onClick="addRight"/>

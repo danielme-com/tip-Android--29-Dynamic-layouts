@@ -1,5 +1,6 @@
 package com.danielme.tipsandroid.dynamiclayouts;
 
+import android.annotation.SuppressLint;
 import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
 import android.os.Bundle;
@@ -44,6 +45,12 @@ public class MainActivity extends Activity
 		addChild(false);
 	}
 	
+	public void reset(View button)
+	{
+		layout.removeAllViews();
+	}
+	
+	@SuppressLint("InlinedApi")
 	private void addChild(boolean right)
 	{
 		LayoutInflater inflater = LayoutInflater.from(this);
@@ -62,7 +69,7 @@ public class MainActivity extends Activity
 		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 		if (right)
 		{
-			params.gravity = Gravity.RIGHT;
+			params.gravity = Gravity.END;
 		}
 		params.topMargin = 15;
 		relativeLayout.setPadding(5, 3, 5, 3);	
@@ -71,7 +78,7 @@ public class MainActivity extends Activity
 		
 		layout.addView(relativeLayout);
 		
-		//scroll to last element
+		//scrolls to last element
 		//http://stackoverflow.com/questions/6438061/can-i-scroll-a-scrollview-programmatically-in-android
 		scrollView.post(new Runnable() { 
 			public void run() { 
